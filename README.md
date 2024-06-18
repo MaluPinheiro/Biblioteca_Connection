@@ -52,7 +52,7 @@ Fazer o check do admin. <br>
 Ao clicar no botão de acessar a navegação é validada de acordo com os parâmetros já estabelecidos no backend e é feito o fetch dos livros presentes na API.
 
 ## Página de *Livros*
-Chegando na página de livros temos a listagem com as informações dos mesmos, tais como **nome**, **quantidade** e **Autor**. Onde na opção **Todos** são listados todos livros que existem na API, e logo após tem as opções de categorias da API onde, ao clicar, lista apenas os livros que estão dentro da categoria selecionada. Sendo elas: *Romance*, *Infantil*, e *Religioso*. Paralelamente, também existe a opção **Cadastrar Livros**, que redireciona para a página de preenchimento de dados.
+Chegando na página de livros temos a listagem com as informações dos mesmos, tais como **nome**, **quantidade**, **autor** e **ano**. Onde na opção **Todos** são listados todos livros que existem na API, e logo após tem as opções de categorias da API onde, ao clicar, lista apenas os livros que estão dentro da categoria selecionada. Sendo elas: *Romance*, *Infantil*, e *Religioso*. Paralelamente, também existe a opção **Cadastrar Livros**, que redireciona para a página de preenchimento de dados.
 
 
 ## Página de *Cadastro Livro*

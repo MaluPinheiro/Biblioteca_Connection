@@ -11,7 +11,6 @@ Este trabalho foi separado em 2 partes a fim de garantir uma melhor separação 
 **Frontend:** Aplicação realizada na entrega do trabalho do Segundo Bimestre
 
 
-
 Esse é um projeto [Next.js](https://nextjs.org/) com [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
 ## Começando
@@ -27,6 +26,7 @@ npm run dev
 ```
 
 Abra [http://localhost:3000](http://localhost:3000) no seu navegador de preferência. Nessa página será mostrado a página incial, onde é feita a introdução da aplicação e logo após uma navegação que direciona para a página de cadastro ou para a página de login.
+
 
 ## Página de *Cadastro*
 
@@ -52,4 +52,8 @@ Fazer o check do admin. <br>
 Ao clicar no botão de acessar a navegação é validada de acordo com os parâmetros já estabelecidos no backend e é feito o fetch dos produtos presentes na API.
 
 ## Página de *Produtos*
-Chegando na página de produtos temos a listagem com as informações dos mesmos, tais como **nome** e **quantidade** .Onde na opção **Todos** são listados todos produtos que existem na API, e logo após tem as opções de categorias da API onde, ao clicar, lista apenas os produtos que estão dentro da categoria selecionada. Sendo elas: *Frutas*, *Legumes*, e *Liquidos*.
+Chegando na página de produtos temos a listagem com as informações dos mesmos, tais como **nome** e **quantidade**. Onde na opção **Todos** são listados todos produtos que existem na API, e logo após tem as opções de categorias da API onde, ao clicar, lista apenas os produtos que estão dentro da categoria selecionada. Sendo elas: *Frutas*, *Legumes*, e *Liquidos*. Paralelamente, também existe a opção **Cadastrar Livros**, que redireciona para a página de preenchimento de dados.
+
+
+## Página de *Cadastro Livro*
+Nesta página, é efetuado o preenchimento de dados para cada livro. Devem ser informados o **Título**, **Quantidade**, **Gênero**, **Autor** e o **Ano**. Após esse preenchimento, esses dados são transferidos para a API, separados novamente por categorias.

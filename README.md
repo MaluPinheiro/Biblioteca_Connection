@@ -33,8 +33,8 @@ Abra [http://localhost:3000](http://localhost:3000) no seu navegador de preferê
 Caso selecione a opção de cadastro, é necessário preencher com as credências necessárias para um registro efetivo no backend.
 Para isso, registre:
 
-*Usuário:* <br>
-*Senha:* <br>
+*Usuário:* `NomeDesejado` <br>
+*Senha:* `SenhaDesejada` <br>
 Se a conta é admin ou não. <br>
 
 Após isso, o registro no backend é realizado e o usuário é redirecionado ao login.

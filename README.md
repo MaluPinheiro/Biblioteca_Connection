@@ -1,4 +1,4 @@
-## Aluno: Arthur Trevizani Buback
+## Alunos: Arthur Trevizani Buback & Maria Luiza Pinheiro
 ## Disciplina: Programação Avançada para WEB
 ## Turma: CC5Mb
 ## Docente: Wagner de Andrade Perin

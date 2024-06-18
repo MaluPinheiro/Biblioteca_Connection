@@ -4,9 +4,9 @@ import Link from "next/link";
 
 const Home = ({ }) => {
     return (
-        <main className="min-h-screen bg-violet-200 flex items-center justify-center p-10">
+        <main className="min-h-screen bg-[url('../public/biblioteca.jpg')] flex items-center justify-center p-10">
             <div className="max-w-4xl h-full bg-white shadow-xl rounded-lg p-8">
-                <h1 className="text-3xl font-bold mb-6 text-center text-purple-800">Biblioteca</h1>
+                <h1 className="text-3xl font-bold mb-6 text-center text-orange-900">Biblioteca</h1>
                 <section className="mb-6 overflow-y-auto max-h-96">
                     <h2 className="text-2xl font-semibold mb-2 text-gray-800">O que é?</h2>
                     <p className="text-gray-600">
@@ -32,7 +32,8 @@ const Home = ({ }) => {
                     </p>
                 </section>
                 <div className='flex justify-end'>
-                    <Link href="/login" className=' inline-block px-4 py-2 rounded font-bold mb-2 bg-purple-800 text-white'>Login</Link>
+                    <Link href="/cadastroUsuario" className=' inline-block px-4 py-2 rounded font-bold mb-2 bg-orange-900 text-white'>Cadastrar</Link>
+                    <Link href="/login" className=' inline-block px-4 py-2 rounded mx-2 font-bold mb-2 bg-orange-900 text-white'>Login</Link>
                 </div>
             </div>
         </main>

@@ -1,3 +1,6 @@
+export type ServerResponse = {
+    "statusCode": string
+}
 export async function request<TResponse>(
     url: string,
     config: RequestInit = {}

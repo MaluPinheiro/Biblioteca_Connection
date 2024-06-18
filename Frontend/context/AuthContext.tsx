@@ -1,4 +1,4 @@
-"use client";
+'use client';
 
 import { createContext, useState } from "react";
 import { request } from '../services/request';
@@ -13,17 +13,24 @@ export type SignIdData = {
 
 type AuthContextType = {
     login: (data: SignIdData) => void;
+    registerUser: (data: SignIdData) => void;
     authError: string | null;
+    registerError: string | null;
 }
 
 type UserAuthentication = {
     'x-access-token': string
 }
 
+type RegisterResponse = {
+    'statusCode': number
+}
+
 export const AuthContext = createContext({} as AuthContextType);
 
 export default function AuthProvider({ children }: { children: React.ReactNode }) {
     const [authError, setAuthError] = useState<string | null>(null);
+    const [registerError, setRegisterError] = useState<string | null>(null)
 
     const router = useRouter();
 
@@ -52,9 +59,26 @@ export default function AuthProvider({ children }: { children: React.ReactNode }
             setAuthError('Ocorreu um erro ao tentar fazer login.');
         }
     }
+    
+    async function registerUser({ name, password }: SignIdData) {
 
+        let res = await request<RegisterResponse>('http://127.0.0.1:5000/register', {
+            method: 'POST',
+            headers: {
+                'Content-Type': 'application/json',
+            },
+            body: JSON.stringify({name, password}),
+            referrerPolicy: 'no-referrer',
+            cache: 'no-store'
+        })
+        if(res.statusCode == 201) {
+            router.push('/login')
+        } else {
+            setRegisterError('Houve um erro. Código: ' + res.statusCode)
+        }
+    }
     return (
-        <AuthContext.Provider value={{ login, authError }}>
+        <AuthContext.Provider value={{ login, authError, registerUser, registerError }}>
             {children}
         </AuthContext.Provider>
     );
